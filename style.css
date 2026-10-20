@@ -2,7 +2,7 @@
     --start-line: #FFF0EB;
     --pace-fire:#FF5C34;
     --finish-kick:#C8D955;
-    --asphalt-dark:#151A10;
+    --asphalt-dark:#1e1e1e; /* #151A10 */
 
     --font-hero:"Bebas Neue", sans-serif;
     --font-body: "Inter", sans-serif;
@@ -258,3 +258,119 @@ a{
     background-color: var(--pace-fire);
     opacity: 1;
 }
+
+
+
+footer{
+    background-color: var(--asphalt-dark);
+    color: rgba(255, 240, 235, 0.55);
+    padding: 4em 10% 2em;
+}
+
+.footer-top{
+    display: grid;
+    grid-template-columns: 1.1fr 2fr 0.8fr;
+    gap: 3em;
+}
+
+
+.footer-logo{
+    margin: 0 0 1.2em;
+    font-family: var(--font-hero);
+    font-size: 2.2em;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1;
+    color: rgba(255, 240, 235, 0.8);
+}
+
+footer address{
+    margin: 0;
+    font-size: 0.85em;
+    line-height: 1.8;
+}
+
+footer a{
+    transition: color .2s;
+}
+
+footer a:hover{
+    color: var(--start-line);
+}
+
+
+.footer-nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em 2em;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    font-size: 0.85em;
+}
+
+.footer-head{
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    margin-bottom: 0.4em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgba(255, 240, 235, 0.8);
+}
+
+.footer-num{
+    font-size: 0.85em;
+    font-weight: 400;
+    color: rgba(255, 240, 235, 0.4);
+}
+
+.footer-line{
+    width: 1.5em;
+    height: 1px;
+    background-color: rgba(255, 240, 235, 0.3);
+}
+
+
+.footer-social{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    font-size: 0.85em;
+}
+
+.footer-social .section-label{
+    margin: 0 0 0.4em;
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: rgba(255, 240, 235, 0.8);
+}
+
+.footer-social a{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4em;
+    width: fit-content;
+}
+
+.footer-social svg{
+    width: 1em;
+    height: 1em;
+}
+
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4em;
+    font-size: 0.75em;
+    color: rgba(255, 240, 235, 0.35);
+}
+
+.footer-bottom a:hover{
+    color: var(--start-line);
+}
+
