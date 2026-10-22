@@ -115,71 +115,56 @@
 
 
         </section>
-        <section id="booking">
-
-        </section>
+        
         <footer>        
-            <div class="footer-top">
+            <div id ="booking" class="footer-top">
                 <div class="footer-left">
-                    <h2 class="footer-logo">GRAFIT</h2>
+                    <h2 class="footer-logo">Contact Us</h2>
                     <address>
                         12 Foundry Lane<br>
                         Your City, 00000<br>
                         +00 000 000 000<br>
-                        <a href="mailto:hello@grafit.com">hello@grafit.com</a>
+                        <a href="mailto:hello@grafit.com">hello@grafit.com</a><br>
+                        <br>
+                        Mon-Fri: 07:00-23:00
                     </address>
                 </div>
 
-                <div class="footer-nav">
-                    <div class="footer-item">
-                        <div class="footer-head">
-                            <span class="footer-num">01</span>
-                            <span class="footer-line"></span>
-                            <a href="#programs">PROGRAMS</a>
-                        </div>
-                        <a href="#programs">Strength</a>
-                        <a href="#programs">Boxing</a>
-                        <a href="#programs">Conditioning</a>
+                <div class="footer-book">
+                    <div class="form-box">
+                        <h2 class="footer-logo">book your session</h2>
+                    </div>
+                    <form>
+                        <div class="form-box">
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
                     </div>
 
-                    <div class="footer-item">
-                        <div class="footer-head">
-                            <span class="footer-num">02</span>
-                            <span class="footer-line"></span>
-                            <a href="#memberships">MEMBERSHIPS</a>
-                        </div>
-                        <a href="#memberships">Monthly</a>
-                        <a href="#memberships">Yearly</a>
-                        <a href="#memberships">Day pass</a>
+                    <div class="form-box">
+                        <label for="tel">Phone number</label>
+                        <input type="tel" id="tel" name="tel" placeholder="Enter your number" required>
                     </div>
 
-                    <div class="footer-item">
-                        <div class="footer-head">
-                            <span class="footer-num">03</span>
-                            <span class="footer-line"></span>
-                            <a href="#booking">BOOKING</a>
-                        </div>
-                        <a href="#booking">Book a session</a>
-                        <a href="#booking">Free trial</a>
+                    <div class="form-box">
+                        <label for="program">Choose your program</label>
+                        <select id="program" name="program" required>
+                            <option value="">Select a program</option>
+                            <option value="personal">Personal training</option>
+                            <option value="group">Group training</option>
+                            <option value="membership">Gym membership</option>
+                        </select>
+                    </div>
+                    <div class="form-box">
+                    <button type="submit" class="booking-btn">BOOK A SESSION
+                        <i data-lucide="arrow-up-right"></i>
+                    </button>
                     </div>
 
-                    <div class="footer-item">
-                        <div class="footer-head">
-                            <span class="footer-num">04</span>
-                            <span class="footer-line"></span>
-                            <span>OPEN</span>
-                        </div>
-                        <span>Mon - Fri &nbsp;6am - 10pm</span>
-                        <span>Sat - Sun &nbsp;8am - 6pm</span>
-                    </div>
+                    </form>
+                    
+
                 </div>
-
-                <div class="footer-social">
-                    <p class="section-label">FOLLOW</p>
-                    <a href="#">Instagram <i data-lucide="arrow-up-right"></i></a>
-                    <a href="#">TikTok <i data-lucide="arrow-up-right"></i></a>
-                    <a href="#">YouTube <i data-lucide="arrow-up-right"></i></a>
-                </div>
+                    
             </div>
 
             <div class="footer-bottom">
