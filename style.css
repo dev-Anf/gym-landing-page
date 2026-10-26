@@ -273,8 +273,8 @@ a{
     
     z-index: 0;
 
-    color:aliceblue;
-    font-size:20vh;
+    color: var(--pace-fire);
+    font-size:30vh;
     pointer-events: none;
     
     
@@ -283,6 +283,18 @@ a{
     position: relative;
     height:100vh;
     background-color: var(--asphalt-dark);
+    font-family: var(--font-hero);
+    letter-spacing: 3px;
+}
+
+.memb-line svg{
+    color: #C8D955;
+    width: 1em;
+    height: 1em;
+    background-color: #5f5f5f25;
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 4px;
 }
 
 .plan{
@@ -295,6 +307,7 @@ a{
     padding: 20px 25px;
     padding-bottom: 30px;
 }
+
 .memb-container{
     position: relative;
     top:17%;
@@ -333,10 +346,31 @@ a{
 
 .memb-line{
     margin: 13px 25px;
+    letter-spacing: normal;
+    font-family: var(--font-body);
 }
 
 .memb-box button{
     width: 80%;
+    margin: 20px auto;
+    padding: 8px;
+    border-radius: 30px;
+    border: 0px solid;
+    transition: transform .2s, background-color .2s;
+    
+}
+
+.memb-box .b{
+    background-color: transparent;
+    color: #dddada;
+    box-shadow: 0px 2px 8px #5f5f5f2f;
+    
+
+}
+
+.memb-box button:hover{
+   transform:translateY(-3px);
+
 }
 
 
