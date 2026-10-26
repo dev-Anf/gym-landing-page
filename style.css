@@ -261,6 +261,84 @@ a{
     opacity: 1;
 }
 
+.article{
+    display: flex;
+   
+    position: absolute;
+    top: 2%;
+    left:50%;
+    transform: translateX(-50%);
+    
+    
+    
+    z-index: 0;
+
+    color:aliceblue;
+    font-size:20vh;
+    pointer-events: none;
+    
+    
+}
+#memberships{
+    position: relative;
+    height:100vh;
+    background-color: var(--asphalt-dark);
+}
+
+.plan{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap:15px;
+    
+    border-bottom:1px solid #4646463f;
+    padding: 20px 25px;
+    padding-bottom: 30px;
+}
+.memb-container{
+    position: relative;
+    top:17%;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    
+   
+    
+    justify-content: center;
+    gap:1%;
+    
+    flex-wrap: wrap;  
+}
+
+.memb-box{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #1e1e1e6e;
+    backdrop-filter: blur(10px);
+    -webkit-background-filter: blur(10px);
+    padding: 10px 0px;
+    border-radius: 25px;
+    border:none;
+    box-shadow: inset 0 0 15px rgba(54, 54, 54, 0.15), 
+            inset 0 0 15px rgba(255, 255, 255, 0.05);
+    width:30%;
+}
+.memb-box span{
+    color: #5f5f5f;
+}
+.memb-box h2{
+    color: #dddada;
+}
+
+.memb-line{
+    margin: 13px 25px;
+}
+
+.memb-box button{
+    width: 80%;
+}
+
 
 
 footer{
