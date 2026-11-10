@@ -369,7 +369,7 @@ header nav{
     transform: translateY(-3px);
 }
 
-/* ---------- Footer ---------- */
+/*  Footer  */
 
 footer{
     background-color: var(--asphalt-dark);
@@ -498,3 +498,117 @@ select option[disabled]{
 .footer-bottom a:hover{
     color: var(--start-line);
 }
+
+ 
+/* 
+   Responsive (desktop-first: base styles above are desktop)
+*/
+ 
+/* ---------- Small laptops / large tablets ---------- */
+@media (max-width: 1100px){
+    .hero-content{ left: 8%; }
+ 
+    #programs{ padding: 5rem 8%; }
+    .program{ padding: 1rem 4rem; }
+    #programs .carousel-indicators{ padding-left: 4rem; }
+ 
+    .memb-box{ width: 31%; }
+ 
+    footer{ padding: 4rem 8% 1.5rem; }
+    .footer-top{ gap: 3rem; }
+}
+ 
+/* ---------- Tablets ---------- */
+@media (max-width: 900px){
+    header{
+        background: linear-gradient(to bottom, rgba(30, 30, 30, 0.75), transparent);
+    }
+    header nav{ gap: 1.25rem; }
+ 
+    /* hero: button goes under the text instead of floating to the side */
+    .hero-content{
+        left: 6%;
+        right: 6%;
+    }
+    .hero-content .hero-btn{
+        position: static;
+        margin-top: 1.5rem;
+    }
+ 
+    #programs{ padding: 4.5rem 6%; }
+ 
+    /* memberships: cards stack vertically, section grows with content */
+    #memberships{
+        height: auto;
+        padding-bottom: 4rem;
+    }
+    .article{ top: 1.5rem; }
+    .memb-container{
+        top: 0;
+        padding-top: 18vw;
+        gap: 1.25rem;
+    }
+    .memb-box{
+        width: 90%;
+        max-width: 26rem;
+    }
+ 
+    /* footer: contacts above the form */
+    footer{ padding: 4rem 6% 1.5rem; }
+    .footer-top{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .booking-btn{
+        width: 100%;
+        max-width: 24rem;
+    }
+}
+ 
+/* ---------- Phones ---------- */
+@media (max-width: 576px){
+    header{ padding: 3% 5%; }
+    header h1{ font-size: 1.6rem; }
+    header nav{
+        gap: 0.9rem;
+        font-size: 0.7rem;
+        letter-spacing: 0.5px;
+    }
+ 
+    #programs{ padding: 4rem 6%; }
+    .section-title{ margin-bottom: 2rem; }
+ 
+    
+    #programs .carousel-control-prev,
+    #programs .carousel-control-next{ display: none; }
+ 
+    .program{
+        padding: 1rem 0;
+        min-height: 27rem;
+    }
+    .program-link{ font-size: 1.35rem; }
+    .program-link svg{
+        width: 1.35rem;
+        height: 1.35rem;
+    }
+    #programs .carousel-indicators{
+        padding-left: 0;
+        margin-top: 1.5rem;
+    }
+    #programs .carousel-indicators [data-bs-target]{ width: 2.25rem; }
+ 
+    .memb-box{ width: 92%; }
+ 
+    /* 16px inputs: iOS doesn't zoom the page on focus */
+    .form-box input,
+    .form-box select{ font-size: 1rem; }
+    .booking-btn{ max-width: none; }
+ 
+    .footer-bottom{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+        margin-top: 3rem;
+    }
+}
+ 
