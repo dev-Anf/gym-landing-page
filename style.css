@@ -153,7 +153,6 @@ img{
 .nav-links a:hover{ 
     color: var(--ink); 
 }
-
 .nav-links a:hover::after{ 
     width: 100%; 
 }
@@ -165,8 +164,6 @@ img{
     color: var(--ink);
     transition: background-color .25s, border-color .25s, color .25s;
 }
-
-
 .nav-cta:hover{
     background: var(--ink);
     color: var(--bg);
@@ -249,7 +246,7 @@ img{
     border-color: var(--ink); 
 }
 
-/* Hero Window (opening photo) */
+/* Hero Window */
 .hero-window{
     position: relative;
     aspect-ratio: 16 / 9;
@@ -293,4 +290,38 @@ img{
     text-transform: uppercase;
     color: rgba(241, 239, 234, 0.7);
     z-index: 2;
+}
+
+/* ============ STATS STRIP ============ */
+.strip{
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 40px 0;
+}
+.strip-inner{
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 var(--pad);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+.strip-item{ 
+    display: flex; 
+    flex-direction: column; 
+    gap: 6px; 
+}
+.strip-item b{
+    font-family: var(--serif);
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+.strip-item span{
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--mute);
 }
