@@ -40,11 +40,7 @@
             </div>
 
             <div class="hero-window" data-window>
-                <img
-                    src="images/hero.jpg"
-                    alt="Inside the gym floor"
-                    loading="eager"
-                >
+                <img src="images/hero.jpg" alt="Inside the gym floor" loading="eager">
                 <div class="hero-window-meta">
                     <span>01 — The floor</span>
                     <span>07:00 — 23:00</span>
@@ -132,6 +128,103 @@
                         <a href="#booking" class="program-link">Book →</a>
                     </div>
                 </article>
+            </div>
+        </section>
+
+        <!-- MEMBERSHIPS -->
+        <section class="memb" id="memberships">
+            <div class="section-head">
+                <span class="kicker">Pricing</span>
+                <h2 class="h2">Simple <em>plans.</em></h2>
+            </div>
+
+            <div class="memb-list">
+                <div class="memb-row">
+                    <div class="memb-row-info">
+                        <span class="memb-name">Basic</span>
+                        <span class="memb-price">$29<span>/mo</span></span>
+                    </div>
+                    <ul class="memb-features">
+                        <li>Full gym access</li>
+                        <li>Locker room</li>
+                        <li>1 intro session</li>
+                    </ul>
+                    <a href="#booking" class="memb-btn">Choose</a>
+                </div>
+
+                <div class="memb-row">
+                    <div class="memb-row-info">
+                        <span class="memb-name">Standard</span>
+                        <span class="memb-price">$49<span>/mo</span></span>
+                    </div>
+                    <ul class="memb-features">
+                        <li>Everything in Basic</li>
+                        <li>Unlimited Strength &amp; Conditioning</li>
+                        <li>2 Boxing classes</li>
+                        <li>1 PT session</li>
+                    </ul>
+                    <a href="#booking" class="memb-btn">Choose</a>
+                </div>
+
+                <div class="memb-row">
+                    <div class="memb-row-info">
+                        <span class="memb-name">Pro</span>
+                        <span class="memb-price">$79<span>/mo</span></span>
+                    </div>
+                    <ul class="memb-features">
+                        <li>Everything in Standard</li>
+                        <li>Unlimited Boxing</li>
+                        <li>4 PT sessions</li>
+                        <li>Priority booking</li>
+                    </ul>
+                    <a href="#booking" class="memb-btn">Choose</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- BOOKING -->
+        <section class="booking" id="booking">
+            <div class="booking-grid">
+                <div class="booking-left">
+                    <span class="kicker">Get in touch</span>
+                    <h2 class="h2">Book a <em>session.</em></h2>
+                    <p class="section-sub">Drop your details and we'll call you back the same day.</p>
+                    <address class="contact">
+                        12 Foundry Lane, Your City<br>
+                        +00 000 000 000<br>
+                        <a href="mailto:hello@grafit.com">hello@grafit.com</a>
+                    </address>
+                    <div class="hours">
+                        <span>Mon–Fri</span><b>07:00 — 23:00</b>
+                        <span>Sat–Sun</span><b>09:00 — 21:00</b>
+                    </div>
+                </div>
+
+                <form class="book-form" id="bookForm" novalidate>
+                    <div class="field">
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" name="name" placeholder="John Carter" autocomplete="name" required>
+                        <small class="err" id="name-err"></small>
+                    </div>
+                    <div class="field">
+                        <label for="tel">Phone</label>
+                        <input type="tel" id="tel" name="tel" placeholder="+1 555 000 0000" autocomplete="tel" inputmode="tel" required>
+                        <small class="err" id="tel-err"></small>
+                    </div>
+                    <div class="field">
+                        <label for="program">Program</label>
+                        <select id="program" name="program" required>
+                            <option value="">Choose a program</option>
+                            <option value="strength">Strength</option>
+                            <option value="boxing">Boxing</option>
+                            <option value="conditioning">Conditioning</option>
+                            <option value="membership">Membership</option>
+                        </select>
+                        <small class="err" id="program-err"></small>
+                    </div>
+                    <button type="submit" class="pill pill-dark submit-btn">Book a session</button>
+                    <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+                </form>
             </div>
         </section>
     </main>
